@@ -1,0 +1,223 @@
+/* 🌈 Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🌅 Hero section gradient animation */
+.hero {
+  background-size: 200% 200%;
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: left; }
+  50% { background-position: right; }
+  100% { background-position: left; }
+}
+
+.bg-1{
+  background-color: rgb(109 84 239);
+}
+
+/* 🧊 Glassmorphism Project Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.15); /* transparent white layer */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 🏷️ Project Title */
+.project-title {
+  color: #ffffff; /* indigo-600 */
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 0.75rem;
+  background: rgb(0, 0, 0);
+}
+
+/* 🔗 Project Links */
+.project-list a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.project-list a:hover {
+  color: #000000;
+}
+
+/*  Call Button hover scale */
+.call-btn {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.call-btn:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.call-btn2:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* 🧭 Mobile menu hover */
+#mobileMenu a {
+  transition: color 0.2s ease;
+}
+
+.img1{
+  top: 20%;
+  right: 0%;
+  position: fixed;
+  border-radius: 30% 0% 0% 30%;
+  width: 10%;
+  z-index: 100;
+}
+
+/* Hide image on small screens */
+@media (max-width: 768px) {
+  .img1 {
+    display: none;
+  }
+}
+
+/* On medium screens */
+@media (max-width: 1024px) {
+  .img1 {
+    width: 20%;
+  }
+}
+
+#wave{
+  display: none;
+  top: 20%;
+  left: 0%;
+  position: fixed;
+  border-radius: 30% 0% 0% 30%;
+  width: 10%;
+}
+
+@media (max-width: 768px) {
+  #wave {
+    display: none !important;
+  }
+}
+
+.bg-img{
+  position: relative;
+  z-index: 0;
+  background-image: url(coding\ bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8); /* Adjust opacity */
+  z-index: -1;
+}
+
+.bg-img h2, .bg-img p{
+  color: #ffffff;
+}
+
+.ed{
+  background-color: #111827;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.ed:hover{
+  background-color: rgb(17, 24, 39, 0.95);
+}
+
+.module{
+  position: relative;
+  background: rgb(19, 39, 15);
+}
+
+.classroom{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+}
+
+.x,.xii,.grad{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+  display: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+.add{
+  position: relative;
+}
+
+@media (max-width: 768px) {
+
+  .module {
+    min-height: 250px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .x, .xii, .grad, .classroom {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .ed {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+.tag{
+  font-family: cursive;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.skill div:hover{
+  background: #dfd9f1;
+  cursor: pointer;
+}
+
+.call-btn3{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
