@@ -1,333 +1,465 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suny Das | Web Developer Portfolio</title>
+  <meta name="description" content="Suny Das | premium web developer portfolio with modern interactions and high-end visual design." />
+  <title>Suny Das | Premium Web Developer Portfolio</title>
 
-  <!-- Tailwind CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-[appropriate-hash]-[…]" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<body class="bg-gray-50 text-gray-800">
-
-<!-- Header -->
-<header class="bg-white shadow-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <img src="sign.jpg" width="10%" alt="sign">
-
-    <!-- Social / Contact Icons -->
-    <div class="flex items-center space-x-4 text-xl text-indigo-600">
-      <a href="https://www.linkedin.com/in/sunydas" target="_blank" class="hover:text-indigo-800 transition">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="mailto:sunydas462@gmail.com" class="hover:text-indigo-800 transition">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-      <a href="tel:9330393001" class="hover:text-indigo-800 transition">
-        <i class="fa-solid fa-phone"></i>
-      </a>
-    </div>
-  </div>
-</header>
-
-  <!-- Hero Section -->
-  <section class="hero text-center py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
-    <h1 data-aos="fade-up" data-aos-duration="1000"
- class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Suny Das</h1>
-    <p data-aos="fade-up" data-aos-duration="1500" class="text-lg md:text-xl mb-6">A Passionate Web Developer crafting Responsive and Engaging Websites.</p>
-    <div data-aos="fade-up" data-aos-duration="2000">
-    <a href="tel:9330393001" class="call-btn bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
-      Call Me
-    </a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="max-w-5xl mx-auto px-6 py-16 text-center">
-    
-    <p class="text-lg text-gray-600 leading-relaxed">
-      I’m a <span class="bg-blue-600 text-white">Web Developer</span> skilled in creating user-friendly,
-      visually appealing, and high-performing websites.
-      I enjoy building everything from small business websites to dynamic web applications. 
-    </p>
-  </section>
-
-  <!-- Skills Section -->
-<section id="skills" class="pt-2 pb-16 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">My Skills</h2>
-
-    <div class="skill grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
-
-      <!-- Frontend -->
-      <div data-aos="fade-up" data-aos-duration="1000" class="p-6 bg-white shadow-md rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold mb-3">Frontend</h3>
-        <p class="text-gray-600">
-          HTML5, CSS3 <br>
-          Bootstrap, Tailwind CSS <br>
-          JavaScript (ES6+) <br>
-          React.js
-        </p>
+<body>
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 px-4 py-4">
+      <div class="brand-mark">
+        <span class="brand-dot"></span>
+        <span>Suny Das</span>
       </div>
 
-      <!-- Backend & Database -->
-      <div data-aos="fade-up" data-aos-duration="1200"class="p-6 bg-white shadow-md rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold mb-3">Backend & Database</h3>
-        <p class="text-gray-600">
-          Node.js (Basic), Express.js (Basic) <br>
-          MongoDB (Basic), MySQL (Basic)
-        </p>
-      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about-services" class="nav-link">About</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
 
-      <!-- Programming Fundamentals -->
-      <div data-aos="fade-up" data-aos-duration="1400" class="p-6 bg-white shadow-md rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold mb-3">Programming Fundamentals</h3>
-        <p class="text-gray-600">
-          C  <br>
-          Data Structures & Algorithms
-        </p>
-      </div>
-
-      <!-- Tools & Platforms -->
-      <div data-aos="fade-up" data-aos-duration="1600" class="p-6 bg-white shadow-md rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold mb-3">Tools & Platforms</h3>
-        <p class="text-gray-600">
-          Git & GitHub <br>
-          Canva, Photopea <br>
-          ChatGPT, Codeium, Claude , Google Gemini
-        </p>
-      </div>
-
-      <!-- CMS & E-Commerce -->
-      <div data-aos="fade-up" data-aos-duration="1600" class="p-6 bg-white shadow-md rounded-2xl hover:scale-105 transition">
-        <h3 class="text-xl font-semibold mb-3">CMS & E-Commerce</h3>
-        <p class="text-gray-600">
-          WordPress (Elementor, Divi)
-          WooCommerce(Basic)
-        </p>
-      </div>
-
-    </div>
-  </div>
-  <div class='text-center mt-10'>
-  <a href="tel:9330393001"><button class="call-btn3">
-    Call Me
-  </button></a>
-  </div>
-    </a>
-</section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="bg-opacity-70 py-16 text-white bg-1">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 data-aos="fade-up" data-aos-duration="1000" class="text-3xl font-semibold text-center mb-10">Blending Design with Development.</h2>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- WordPress -->
-        <div data-aos="fade-up" data-aos-duration="1200" class="project-card">
-          <h2 class="project-title">Websites</h3>
-          <ul class="project-list">
-            <li><a href="https://luminaesthetics.mfweb.in" target="_blank">Lumina Aesthetics</a></li>
-            <li><a href="https://elationhairskinclinic.com/" target="_blank">Elation Hair & Skin Clinic</a></li>
-            <li><a href="https://www.drdberaep.com/" target="_blank">Dr. D.Bera</a></li>
-            <li><a href="https://clickfusions.com" target="_blank">ClickFusions</a></li>
-            <li><a href="https://www.kpohealth.com" target="_blank">KPO Health</a></li>
-            <li><a href="https://auroramediaus.com" target="_blank">Aurora Media US</a></li>
-            <li><a href="https://trilingualkidsacademy.com" target="_blank">Trilingual Kids Academy</a></li>
-          </ul>
+      <div class="flex items-center gap-3">
+        <div class="social-links hidden sm:flex">
+          <a class="icon-link" href="https://www.linkedin.com/in/sunydas" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a class="icon-link" href="mailto:sunydas462@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </a>
         </div>
 
-        <!-- Landing Pages -->
-        <div data-aos="fade-up" data-aos-duration="1400" class="project-card">
-          <h3 class="project-title">Landing Pages</h3>
-          <ul class="project-list">
-            <li><a href="https://lp.thegracewellnessclinic.com" target="_blank">Grace Wellness</a></li>
-            <li><a href="https://lp.petalshealth.in/urology/" target="_blank">Petalshealth-Urology</a></li>
-            <li><a href="https://gariahat.ayusyaayurveda.com/" target="_blank">Ayusyaayurveda</a></li>
-            <li><a href='https://hairtransplantationindia.com/aesthetic/' target='_blank'>Dr. Manoj Khanna</a></li>
-            <li><a href="https://onlineshopping.sweepsofer.com" target="_blank">Online Shopping</a></li>
-            <li><a href="http://homedestiny.sweepsofer.com/" target="_blank">Home Destiny</a></li>
-            <li><a href="http://homeimprovement.auroramediaus.com/" target="_blank">Home Improvement</a></li>
-            <li><a href="http://iphone15.auroramediaus.com/" target="_blank">iPhone 15</a></li>
-          </ul>
-        </div>
-
-        <!--React & JavaScript Projects -->
-        <div data-aos="fade-up" data-aos-duration="1600" class="project-card">
-          <h3 class="project-title">JavaScript Projects</h3>
-          <ul class="project-list">
-            <li><a href="https://travida.vercel.app" target="_blank">Tavel Booking Website</a></li>
-            <li><a href="https://sunydas.github.io/knowledge-hunter/" target="_blank">Knowledge Hunter</a></li>
-            <li><a href="https://sunydas.github.io/Arithmetic-calculator/" target="_blank">Arithmetic Calculator</a></li>
-            <li><a href="https://sunydas.github.io/motive/" target="_blank">Motive</a></li>
-          </ul>
-        </div>
-
-        <!-- HTML Websites -->
-        <div data-aos="fade-up" data-aos-duration="1800" class="project-card">
-          <h3 class="project-title">HTML Websites</h3>
-          <ul class="project-list">
-            <li><a href="http://centurysvc360.com/" target="_blank">Century SVC</a></li>
-            <li><a href="http://camdendrivingschool.co.uk" target="_blank">Camden Driving School</a></li>
-          </ul>
-        </div>
-
-        <!-- Web Tools -->
-        <div data-aos="fade-up" data-aos-duration="2000" class="project-card">
-          <h3 class="project-title">Web Tools</h3>
-          <ul class="project-list">
-            <li><a href="http://c3mcurrencyconverter.centurymedia360.com/" target="_blank">Currency Converter</a></li>
-            <li><a href="http://digitalcalendar.centurymedia360.com/" target="_blank">Digital Calendar</a></li>
-            <li><a href="http://it.centurymedia360.com/" target="_blank">IT Tool</a></li>
-          </ul>
-        </div>
+        <button class="md:hidden menu-toggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12" class="line-mid"></line>
+            <line x1="3" y1="6" x2="21" y2="6" class="line-top"></line>
+            <line x1="3" y1="18" x2="21" y2="18" class="line-bottom"></line>
+          </svg>
+        </button>
       </div>
     </div>
-  </section>
 
-  <section class="py-20">
-   <h2 data-aos="fade-up" data-aos-duration="1000" class="text-3xl font-bold text-center mb-6">
-      From <span class="bg-blue-600 text-white">Classroom</span> to <span class="text-indigo-600">Coding</span>
-    </h2>
-    <div class="flex flex-col md:flex-row max-w-6xl mx-auto px-6 pt-10 gap-6">
-      <div class="flex-1">
-        <h3 class="text-2xl mb-5 font-semibold">Click & Explore</h3>
-        <div data-aos="fade-up" data-aos-duration="1200" class="ed" id="edu1">Madhyamik - 10th Class</div>
-        <div data-aos="fade-up" data-aos-duration="1400" class="ed my-4" id="edu2">Higher Secondary - 12th Class</div>
-        <div data-aos="fade-up" data-aos-duration="1600" class="ed" id="edu3"> Graduation</div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+      <nav class="flex flex-col items-center gap-6 py-8">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#about-services" class="mobile-nav-link">About</a>
+        <a href="#journey" class="mobile-nav-link">Journey</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+    </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="max-w-7xl mx-auto hero-grid">
+      <div class="hero-copy">
+        <div data-aos="fade-up" data-aos-duration="700" class="hero-badge">Creative Web Developer • UI Engineering</div>
+        <h1 data-aos="fade-up" data-aos-duration="900">Building bold digital experiences for modern brands.</h1>
+        <p data-aos="fade-up" data-aos-duration="1100" class="hero-subtitle">
+          I design and develop premium websites that feel sleek, fast, and conversion-ready across every screen.
+        </p>
+
+        <div data-aos="fade-up" data-aos-duration="1300" class="cta-row">
+          <a href="#projects" class="primary-btn">View Projects</a>
+          <a href="tel:9330393001" class="secondary-btn">Call Me</a>
+        </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="1000" class="flex-1 module">
-          <div class="classroom">
-            <p>Digital Board</p>
+
+      <div data-aos="zoom-in" data-aos-duration="1200" class="hero-visual">
+        <div class="portrait-card">
+          <img src="images/My_image.jpg" alt="Modern web developer portfolio image" />
+        </div>
+        <div class="floating-card">
+          <div class="floating-top">Available for freelance & full-time roles</div>
+          <div class="floating-bottom">
+            <span>24+</span>
+            <small>Unique Web Experiences Delivered</small>
           </div>
-          <div class="x">
-            <h2 class="text-xl font-semibold">West Bengal Board of Secondary Education</h2>
-            <p>Year: 2016</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-bar">
+    <div class="max-w-6xl mx-auto px-4 py-6">
+      <div class="trust-bar-grid">
+        <div class="tech-stack-line" data-aos="fade-up" data-aos-duration="700">
+          <span class="stack-badge">WordPress</span>
+          <span class="stack-badge">React</span>
+          <span class="stack-badge">JavaScript</span>
+          <span class="stack-badge">Tailwind CSS</span>
+        </div>
+
+        <div class="metric-callout" data-aos="fade-up" data-aos-duration="900">
+          <span>24+</span>
+          <small>Unique Web Experiences Delivered</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
+      <div class="section-heading" data-aos="fade-up" data-aos-duration="700">
+        <span class="section-tag">Projects</span>
+        <h2>Selected websites, landing pages, and interactive frontend builds.</h2>
+      </div>
+
+      <div class="project-toolbar" data-aos="fade-up" data-aos-duration="900">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="website">Website</button>
+        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+        <button class="filter-btn" data-filter="react">React + JS</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="website" data-aos="fade-up" data-aos-duration="900">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Sandora Digital website showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">Website</span>
+            <h3>Sandora Digital</h3>
+            <p>Creative digital business website with a polished brand-first layout.</p>
+            <a href="https://sandoradigital.com/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="website" data-aos="fade-up" data-aos-duration="1100">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Lips India website showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">Website</span>
+            <h3>Lips India Pvt Ltd</h3>
+            <p>Corporate brand presentation built for trust, credibility, and clarity.</p>
+            <a href="https://lipsindiapvtltd.com/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="website" data-aos="fade-up" data-aos-duration="1300">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80" alt="Elation Hair Skin Clinic website showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">Website</span>
+            <h3>Elation Hair & Skin Clinic</h3>
+            <p>Healthcare-facing site with softer visual tone and clear service positioning.</p>
+            <a href="https://elationhairskinclinic.com/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="website" data-aos="fade-up" data-aos-duration="1500">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=900&q=80" alt="Lumina Aesthetics website showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">Website</span>
+            <h3>Lumina Aesthetics</h3>
+            <p>Premium healthcare site crafted to feel elegant, calm, and conversion-aware.</p>
+            <a href="https://luminaesthetics.in/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="website" data-aos="fade-up" data-aos-duration="1700">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="ClickFusions website showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">Website</span>
+            <h3>ClickFusions</h3>
+            <p>Creative agency presentation shaped with strong storytelling and modern rhythm.</p>
+            <a href="https://clickfusions.com/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="landing" data-aos="fade-up" data-aos-duration="900">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=80" alt="Petals Health cosmetic gynaecology landing page" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">Landing Page</span>
+            <h3>Petals Health — Cosmetic Gynaecology</h3>
+            <p>Focused healthcare lead-generation page built for high trust and intent-driven users.</p>
+            <a href="https://lp.petalshealth.in/cosmetic-gynaecology-non-surgical/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="landing" data-aos="fade-up" data-aos-duration="1100">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=80" alt="Petals Health urology landing page" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">Landing Page</span>
+            <h3>Petals Health — Urology</h3>
+            <p>Conversion-led page with clean hierarchy, persuasive copy blocks, and clear CTAs.</p>
+            <a href="https://lp.petalshealth.in/urology/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="landing" data-aos="fade-up" data-aos-duration="1300">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80" alt="MFUNL landing page showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">Landing Page</span>
+            <h3>MFUNL</h3>
+            <p>Marketing landing page designed around clarity, speed, and strong lead capture.</p>
+            <a href="https://lp.mfunl.com/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="react" data-aos="fade-up" data-aos-duration="900">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80" alt="Knowledge Hunter app showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">React + JS</span>
+            <h3>Knowledge Hunter</h3>
+            <p>Interactive learning-focused frontend idea with structured discovery and browsing flow.</p>
+            <a href="https://sunydas.github.io/knowledge-hunter/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="react" data-aos="fade-up" data-aos-duration="1100">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Travida booking frontend showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">React + JS</span>
+            <h3>Travida</h3>
+            <p>Booking-focused frontend experience with fluid interactions and clean UI hierarchy.</p>
+            <a href="https://travida.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="react" data-aos="fade-up" data-aos-duration="1300">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" alt="Digital Calendar application showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">React + JS</span>
+            <h3>Digital Calendar</h3>
+            <p>Utility-focused frontend with highly practical interface design and interaction flow.</p>
+            <a href="http://digitalcalendar.centurymedia360.com/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="react" data-aos="fade-up" data-aos-duration="1500">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80" alt="C3M Currency Converter showcase" />
+          </div>
+          <div class="project-body">
+            <span class="mini-label">React + JS</span>
+            <h3>C3M Currency Converter</h3>
+            <p>Compact utility tool UI built for fast, practical conversion use cases.</p>
+            <a href="http://c3mcurrencyconverter.centurymedia360.com/" target="_blank" rel="noopener noreferrer">Visit Project <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-services" class="value-section">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
+      <div class="value-grid">
+        <div class="about-copy" data-aos="fade-up" data-aos-duration="900">
+          <span class="section-tag">About</span>
+          <h2>Creative engineering with a premium design mindset.</h2>
+          <p>
+            I’m a web developer who turns business objectives into elegant digital experiences. My focus is on building layouts that feel modern, intuitive, and polished while staying practical for real-world growth.
+          </p>
+
+          <div class="point-grid">
+            <div class="point-card">
+              <strong>Responsive</strong>
+              <span>Fluid across desktop, tablet, and mobile</span>
+            </div>
+            <div class="point-card">
+              <strong>Fast</strong>
+              <span>Performance-oriented UI implementation</span>
+            </div>
+            <div class="point-card">
+              <strong>Creative</strong>
+              <span>Brand-aware design with interactive storytelling</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-grid" data-aos="fade-up" data-aos-duration="1100">
+          <article class="service-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 18h8" />
+              <path d="M10 14 5 9l5-5" />
+              <path d="M14 10l5 5-5 5" />
+            </svg>
+            <h3>Landing Pages</h3>
+            <p>Performance-first marketing pages designed for faster trust and better conversion.</p>
+          </article>
+
+          <article class="service-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 7h8" />
+              <path d="M8 12h8" />
+              <path d="M8 17h6" />
+              <path d="M4 5h16v14H4z" />
+            </svg>
+            <h3>Custom Frontend</h3>
+            <p>Clean code, responsive interfaces, and interactive web experiences using modern tooling.</p>
+          </article>
+
+          <article class="service-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16" />
+              <path d="M6 8V6h12v2" />
+              <path d="M7 8v10" />
+              <path d="M17 8v10" />
+              <path d="M4 18h16" />
+            </svg>
+            <h3>WordPress & WooCommerce</h3>
+            <p>Business websites, CMS-driven updates, and conversion-friendly storefront experiences.</p>
+          </article>
+
+          <article class="service-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v18" />
+              <path d="M6 15c0-3 2.5-5 6-5s6 2 6 5" />
+              <path d="M6 9c0-3 2.5-5 6-5s6 2 6 5" />
+            </svg>
+            <h3>UI Refinement</h3>
+            <p>Specialized in visual storytelling, layout polish, and smooth premium user flows.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="journey" class="journey-section">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
+      <div class="section-heading" data-aos="fade-up" data-aos-duration="700">
+        <span class="section-tag">Journey</span>
+        <h2>From classroom fundamentals to real-world web execution.</h2>
+      </div>
+
+      <div class="journey-grid">
+        <div class="edu-panel x" data-aos="fade-up" data-aos-duration="1100">
+          <div class="edu-media">
+            <img src="images/kbhs.webp" alt="KBHS school image" />
+          </div>
+          <div class="edu-copy">
+            <h3>Behala Kishore Bharati High School</h3>
+            <p>Class 10 • 2016</p>
             <p>Percentage: 76.57%</p>
           </div>
+          <div class="edu-extra">
+            <div class="edu-stat">
+              <span>2016</span>
+              <small>Board Exam</small>
+            </div>
+            <div class="edu-stat">
+              <span>76.57%</span>
+              <small>Performance</small>
+            </div>
+          </div>
+        </div>
 
-          <div class="xii">
-            <h2 class="text-xl font-semibold">West Bengal Board of Higher Secondary Education</h2>
-            <p>Year: 2018</p>
-            <p>Department: Science (PCMB)</p>
+        <div class="edu-panel xii" data-aos="fade-up" data-aos-duration="1300">
+          <div class="edu-media">
+            <img src="images/bhs.webp" alt="BHS school image" />
+          </div>
+          <div class="edu-copy">
+            <h3>Behala High School</h3>
+            <p>Class 12 • 2018</p>
+            <p>Science (PCMB)</p>
             <p>Percentage: 84%</p>
           </div>
-          
-          <div class="grad">
-            <h2 class="text-xl font-semibold">University of Calcutta</h2>
-            <p>Year: 2022</p>
-            <p>Department: B.Sc (Computer Science Hons.)</p>
+          <div class="edu-extra">
+            <div class="edu-stat">
+              <span>2018</span>
+              <small>Higher Secondary</small>
+            </div>
+            <div class="edu-stat">
+              <span>84%</span>
+              <small>Score</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-panel grad" data-aos="fade-up" data-aos-duration="1500">
+          <div class="edu-media">
+            <img src="images/cu.webp" alt="University of Calcutta image" />
+          </div>
+          <div class="edu-copy">
+            <h3>University of Calcutta</h3>
+            <p>Graduation • 2022</p>
+            <p>B.Sc (Computer Science Hons.)</p>
             <p>Percentage: 76%</p>
           </div>
+          <div class="edu-extra">
+            <div class="edu-stat">
+              <span>2022</span>
+              <small>Graduation</small>
+            </div>
+            <div class="edu-stat">
+              <span>B.Sc</span>
+              <small>Computer Science</small>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 text-center bg-img">
-    <h2 class="text-3xl font-semibold mb-6">Let’s Work Together</h2>
-    <p class="text-gray-600 mb-6">Have a project in mind or looking to collaborate?<br> Let’s connect and bring your ideas to life!</p>
-    <a href="mailto:sunydas462@gmail.com" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition call-btn2 font-semibold">
-      Contact Me
-    </a>
+  <section id="contact" class="contact-section">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
+      <div class="contact-card" data-aos="fade-up" data-aos-duration="900">
+        <div class="contact-copy">
+          <span class="section-tag">Contact</span>
+          <h2>Let’s turn your next digital idea into something memorable.</h2>
+          <p>Have a launch-ready website in mind? Need a polished frontend partner? Let’s connect and build it with clarity and style.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:sunydas462@gmail.com" class="primary-btn">Email Me</a>
+          <a href="tel:9330393001" class="secondary-btn">Call Now</a>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <footer class="site-footer">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-slate-300">
+      <p>© <span id="year"></span> Suny Das | All Rights Reserved</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
 
-  <section id="contact" class="py-12 bg-gray-100">
-  <div class="max-w-3xl mx-auto text-center mb-10">
-    <h2 class="text-3xl font-bold text-gray-800">Mark Your Presence Here</h2>
-    <p class="text-gray-600 mt-2">Have a project in mind or just want to say hi? Fill out the form below!</p>
-  </div>
+  <button id="backToTop" class="hidden fixed bottom-6 right-6 rounded-full px-4 py-3 text-lg">↑</button>
 
-  <form id="contactForm" class="max-w-3xl mx-auto bg-white p-8 shadow-lg rounded-lg">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    <input type="text" name="name" placeholder="Your Name" required class="border p-3 rounded w-full" />
-    <input type="email" name="_replyto" placeholder="Your Email" required class="border p-3 rounded w-full" />
-  </div>
-
-  <textarea name="message" rows="5" placeholder="Your Message" required class="border p-3 rounded w-full mt-6"></textarea>
-
-  <button type="submit" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg w-full">
-    Send Message
-  </button>
-
-  <!-- Success Message (hidden by default) -->
-  <p id="successMsg" class="text-green-600 font-semibold text-center mt-4 hidden">
-    Your message has been sent successfully!
-  </p>
-</form>
-</section>
-
-  <!--My image-->
-  <img src="My_image.jpg" class="img1" alt="Suny Das" meta="Suny Das" width="100%">
-
-  <!---waving-->
-  <div id="wave">
-  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXd4YXExM3Aydzh6MTF5bjVnMHgyaW5wb3lkNmxtZ3RpbzhmaHVwMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/be1NnXBZIFmI5Tehij/giphy.gif" alt="wave">
-  </div>
-
-
-  <!--Address-->
-  <div class="flex flex-col md:flex-row gap-6 p-6">
-  <div class="flex-1 p-6">
-    <iframe class="w-full h-64 md:h-80 rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6153.206003417759!2d88.29213013871002!3d22.498030330510836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027a398a77fceb%3A0x7b6a3fe4c44eeca6!2sRabindra%20Nagar%2C%20Behala%2C%20Kolkata%2C%20West%20Bengal!5e1!3m2!1sen!2sin!4v1762963220416!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-
-  <div class="flex-1 bg-gray-200 p-6 rounded-lg shadow add">
-      <h2 class="text-3xl font-bold mb-5">Explore My Hometown</h2>
-      <p><i class="fa-solid fa-location-dot text-blue-600 text-xl mb-5"></i> 3/124, Rabindranagar, Behala, Kolkata - 700060</p>
-      <p><i class="fa-solid fa-phone text-green-600 text-xl mb-5"></i>
-          <a href="tel:+919330393001" class="font-semibold hover:underline">
-        +91 93303 93001
-      </a></p>
-      <p><i class="fa-solid fa-envelope text-red-600 text-xl"></i>
-          <a href="mailto:sunydas462@gmail.com" class="font-semibold hover:underline">
-          sunydas462@gmail.com
-      </a>
-      </p>
-      <p class="tag">“Every idea begins as a whisper of <span class="bg-blue-600 text-white">imagination...</span>  
-      Every project grows with a spark of collaboration...  
-      And every connection tells a new story — let’s write ours together.”</p>
-  </div>
-
-</div>
-
-<!-- Back to Top Button -->
-<button id="backToTop"
-  class="hidden fixed bottom-6 right-6 bg-gray-900 text-white p-3 rounded-full shadow-lg 
-         hover:bg-indigo-700 transition-all duration-300">
-  ↑
-</button>
-
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 text-center">
-  <p>©<span id="year"></span> Suny Das | All Rights Reserved</p>
-</footer>
-
-
-
-<script src="script.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
