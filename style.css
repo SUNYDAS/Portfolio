@@ -133,19 +133,6 @@ h1, h2, h3 {
   letter-spacing: -0.02em;
 }
 
-/* --- Decode Text Animation --- */
-.decode-text {
-  white-space: pre-wrap;
-}
-
-.scramble-char {
-  color: var(--accent-2);
-  -webkit-text-fill-color: var(--accent-2);
-  background: none;
-  opacity: 0.8;
-  text-shadow: 0 0 10px rgba(34, 211, 238, 0.85), 0 0 22px rgba(139, 92, 246, 0.4);
-}
-
 section {
   position: relative;
   z-index: 1;

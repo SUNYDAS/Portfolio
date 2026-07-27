@@ -104,68 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Decode-in text scramble animation for headings
-  const decodeHeadings = document.querySelectorAll(".decode-text");
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  if (decodeHeadings.length && !reduceMotion) {
-    const scrambleChars = "!<>-_\\/[]{}=+*^?#@$%";
-
-    const scramble = (el) => {
-      const original = el.textContent;
-      const length = original.length;
-      const queue = Array.from({ length }, (_, i) => ({
-        from: original[i],
-        start: Math.floor(Math.random() * 20),
-        end: Math.floor(Math.random() * 20) + 20,
-      }));
-
-      let frame = 0;
-      let frameRequest;
-
-      const update = () => {
-        let output = "";
-        let complete = 0;
-
-        queue.forEach((item) => {
-          if (frame >= item.end) {
-            complete++;
-            output += item.from;
-          } else if (frame >= item.start) {
-            const char = scrambleChars[Math.floor(Math.random() * scrambleChars.length)];
-            output += `<span class="scramble-char">${char}</span>`;
-          } else {
-            output += item.from === " " ? " " : "";
-          }
-        });
-
-        el.innerHTML = output;
-
-        if (complete === queue.length) {
-          el.textContent = original;
-          return;
-        }
-
-        frame++;
-        frameRequest = requestAnimationFrame(update);
-      };
-
-      update();
-    };
-
-    const decodeObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          scramble(entry.target);
-          decodeObserver.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.4 }
-    );
-
-    decodeHeadings.forEach((heading) => decodeObserver.observe(heading));
-  }
 });
 
 AOS.init({
